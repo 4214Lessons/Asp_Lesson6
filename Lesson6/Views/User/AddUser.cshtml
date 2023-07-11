@@ -1,0 +1,11 @@
+﻿@model User
+
+<form asp-controller="User" asp-action="AddUser" method="post">
+    <input type="email" asp-for="@Model.Email" />
+    <span asp-validation-for="@Model.Email"></span> <br/>
+    <input asp-for="@Model.Age" />
+    <span asp-validation-for="@Model.Age"></span> <br/>
+    <input type="number" asp-for="@Model.Rating" />
+    <span asp-validation-for="@Model.Rating"></span> <br/>
+    <button>Add</button>
+</form> 

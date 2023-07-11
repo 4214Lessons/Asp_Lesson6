@@ -1,0 +1,13 @@
+﻿@model AddProductViewModel
+
+<form asp-controller="Product" asp-action="AddProduct" method="post">
+    <input asp-for="@Model.Name" />
+    <span asp-validation-for="@Model.Name"></span> <br />
+    <input asp-for="@Model.Description" />
+    <span asp-validation-for="@Model.Description"></span> <br />
+    <input type="number" asp-for="@Model.Price" />
+    <span asp-validation-for="@Model.Price"></span> <br />
+    <input type="number" asp-for="@Model.Quantity" />
+    <span asp-validation-for="@Model.Quantity"></span> <br />
+    <button>Add</button>
+</form> 
